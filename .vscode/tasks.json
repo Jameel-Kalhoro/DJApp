@@ -1,0 +1,18 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build JUCE Project",
+            "type": "shell",
+            "command": "devenv", // Use "msbuild" for Visual Studio
+            "args": [
+                "/p:Configuration=Debug", // Replace with your desired build configuration (e.g., Debug or Release)
+                "OtoDecks.sln" // Replace with your project's .sln file name
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
